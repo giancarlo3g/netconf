@@ -1,0 +1,18 @@
+A:VSR# configure system netconf
+A:VSR>config>system>netconf# info
+----------------------------------------------
+            no shutdown
+----------------------------------------------
+
+A:VSR# configure system security
+A:VSR>config>system>security# info
+----------------------------------------------
+            user "ncuser"
+                password "$2y$10$iD9KASe9OifMIs1.5FOL6.Ei5AAybKgWCvpK8K4sNjeF./CozvESq"
+                access console netconf
+                console
+                    member "default"
+                    member "administrative"
+                exit
+            exit
+----------------------------------------------

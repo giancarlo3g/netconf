@@ -52,12 +52,20 @@ if __name__ == "__main__":
     </filter> 
     '''
 
+    filter_card = '''
+    <filter type="subtree">
+      <state xmlns="urn:nokia.com:sros:ns:yang:sr:state">
+      <card/>
+      </state>
+    </filter> 
+    '''
+
     #request_xml = str(sys.argv[1])
     #operation = request_xml.split('.xml')[0]
     #data = nc_session.get_config(filter_interface_system).data_xml
 
     # parse xml file and send request via netconf
-    operation = 'running'
+    operation = 'ports'
     nc_session = open_connection(host,user,passwd)
     data = nc_session.get(filter_port).data_xml
     
