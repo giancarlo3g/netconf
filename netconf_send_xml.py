@@ -69,7 +69,7 @@ if __name__ == "__main__":
     nc_session = open_connection(host,user,passwd)
     data = nc_session.get(filter_port).data_xml
     
-    # print and sava reply
+    # print and save reply
     write_xml(host,operation,data)
     print_xml(data)
 
