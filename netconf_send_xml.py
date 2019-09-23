@@ -1,5 +1,4 @@
 from ncclient import manager
-import ncclient
 import xmltodict
 import xml.dom.minidom
 import sys
