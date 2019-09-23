@@ -3,6 +3,7 @@ import ncclient
 import xmltodict
 import xml.dom.minidom
 import sys
+import getpass
 from lxml import etree
 
 #def open_xml_request():
@@ -23,9 +24,9 @@ def close_connection(m):
 if __name__ == "__main__":
 
     # enter connection info
-    host = str(input('host ip: '))
-    user = str(input('user: '))
-    passwd = str(input('password: '))
+    host = str(input('Host IP: '))
+    user = str(input('User: '))
+    passwd = getpass.getpass()
 
     filter_interface_system='''
     <filter type="subtree">
