@@ -52,6 +52,14 @@ if __name__ == "__main__":
     </filter> 
     '''
 
+    filter_port_v2='''
+    <filter type="subtree">
+      <state xmlns="urn:nokia.com:sros:ns:yang:sr:state">
+	    <port/>
+      </state>
+    </filter> 
+    '''
+
     filter_card = '''
     <filter type="subtree">
       <state xmlns="urn:nokia.com:sros:ns:yang:sr:state">
